@@ -8,29 +8,29 @@
     <title>Login</title>
 </head>
 <body>
-    <div>
-        <div class="main-login">
-            <div class="left-login">
-                <h1>Faça seu Login! <br>Entre para o nosso time!</h1>
-                <img src="img/code-typing-animate.svg" class="left-login-image" alt="code">
-            </div>
-            <div class="right-login">
-                <div class="card-login">
-                    <h1>LOGIN</h1>
-                    <div class="textfield">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" placeholder="Usuário">
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <div>
+            <div class="main-login">
+                <div class="left-login">
+                    <h1>Faça seu Login! <br>Entre para o nosso time!</h1>
+                    <img src="img/code-typing-animate.svg" class="left-login-image" alt="code">
+                </div>
+                <div class="right-login">
+                    <div class="card-login">
+                        <h1>LOGIN</h1>
+                        <div class="textfield">
+                            <label for="usuario">Usuário</label>
+                            <input type="text" name="usuario" placeholder="Usuário" maxlength="8" >
+                        </div>
+                        <div class="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="Senha" placeholder="Senha" maxlength="8">
+                        </div>
+                        <button class="btn-login">Login</button>
                     </div>
-
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="Senha" placeholder="Senha">
-                    </div>
-
-                    <button class="btn-login">Login</button>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 </html>
